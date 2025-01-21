@@ -18,6 +18,7 @@ func AllTypes() []any {
 		pkg.ConaninfoEntry{},
 		pkg.DartPubspecLockEntry{},
 		pkg.DotnetDepsEntry{},
+		pkg.DotnetPackagesLockEntry{},
 		pkg.DotnetPortableExecutableEntry{},
 		pkg.DpkgDBEntry{},
 		pkg.ELFBinaryPackageNoteJSONPayload{},

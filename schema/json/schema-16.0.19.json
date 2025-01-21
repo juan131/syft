@@ -218,33 +218,6 @@
         "matches"
       ]
     },
-    "BitnamiEntry": {
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "arch": {
-          "type": "string"
-        },
-        "distro": {
-          "type": "string"
-        },
-        "revision": {
-          "type": "string"
-        },
-        "version": {
-          "type": "string"
-        }
-      },
-      "type": "object",
-      "required": [
-        "name",
-        "arch",
-        "distro",
-        "revision",
-        "version"
-      ]
-    },
     "CConanFileEntry": {
       "properties": {
         "ref": {
@@ -517,6 +490,29 @@
         "path",
         "sha512",
         "hashPath"
+      ]
+    },
+    "DotnetPackagesLockEntry": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "contentHash": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "contentHash",
+        "type"
       ]
     },
     "DotnetPortableExecutableEntry": {
@@ -1655,9 +1651,6 @@
               "$ref": "#/$defs/BinarySignature"
             },
             {
-              "$ref": "#/$defs/BitnamiEntry"
-            },
-            {
               "$ref": "#/$defs/CConanFileEntry"
             },
             {
@@ -1677,6 +1670,9 @@
             },
             {
               "$ref": "#/$defs/DotnetDepsEntry"
+            },
+            {
+              "$ref": "#/$defs/DotnetPackagesLockEntry"
             },
             {
               "$ref": "#/$defs/DotnetPortableExecutableEntry"
