@@ -54,6 +54,7 @@ func AllTypes() []any {
 		pkg.RustCargoLockEntry{},
 		pkg.SwiftPackageManagerResolvedEntry{},
 		pkg.SwiplPackEntry{},
+		pkg.TerraformLockProviderEntry{},
 		pkg.WordpressPluginEntry{},
 		pkg.YarnLockEntry{},
 	}

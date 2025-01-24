@@ -34,6 +34,7 @@ const (
 	LinuxKernelModulePkg    Type = "linux-kernel-module"
 	NixPkg                  Type = "nix"
 	NpmPkg                  Type = "npm"
+	OpamPkg                 Type = "opam"
 	PhpComposerPkg          Type = "php-composer"
 	PhpPeclPkg              Type = "php-pecl"
 	PortagePkg              Type = "portage"
@@ -44,7 +45,7 @@ const (
 	RustPkg                 Type = "rust-crate"
 	SwiftPkg                Type = "swift"
 	SwiplPackPkg            Type = "swiplpack"
-	OpamPkg                 Type = "opam"
+	TerraformPkg            Type = "terraform"
 	WordpressPluginPkg      Type = "wordpress-plugin"
 )
 
@@ -73,6 +74,7 @@ var AllPkgs = []Type{
 	LinuxKernelModulePkg,
 	NixPkg,
 	NpmPkg,
+	OpamPkg,
 	PhpComposerPkg,
 	PhpPeclPkg,
 	PortagePkg,
@@ -83,7 +85,7 @@ var AllPkgs = []Type{
 	RustPkg,
 	SwiftPkg,
 	SwiplPackPkg,
-	OpamPkg,
+	TerraformPkg,
 	WordpressPluginPkg,
 }
 
@@ -130,6 +132,7 @@ var purlToPkgMap = map[string]Type{
 	"swiplpack":              SwiplPackPkg,
 	packageurl.TypePub:       DartPubPkg,
 	packageurl.TypePyPi:      PythonPkg,
+	"terraform":              TerraformPkg,
 	"wordpress-plugin":       WordpressPluginPkg,
 	"linux-kernel":           LinuxKernelPkg,
 	"linux-kernel-module":    LinuxKernelModulePkg,
